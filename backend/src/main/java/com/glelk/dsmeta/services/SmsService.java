@@ -54,7 +54,7 @@ public class SmsService {
                     .append(" com um total de R$ ")
                     .append(sale.getAmount());
         } else {
-            stringBuilder.append("O vendedor não foi encontrado");
+            stringBuilder.append("A venda não foi encontrada");
         }
 
         Twilio.init(twilioSid, twilioKey);
