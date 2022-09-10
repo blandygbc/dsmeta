@@ -45,7 +45,7 @@ public class SmsService {
         Sale sale = saleRepository.findById(saleId).orElse(new Sale());
         StringBuilder stringBuilder = new StringBuilder();
         if (sale.getSellerName() != null) {
-            stringBuilder.append("O vendedor ")
+            stringBuilder.append("O(A) vendedor(a) ")
                     .append(sale.getSellerName())
                     .append(" foi destaque em ")
                     .append(sale.getDate().getMonthValue())
